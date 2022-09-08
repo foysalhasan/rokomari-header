@@ -22,17 +22,29 @@ body {
     outline: none !important;
     box-shadow: none !important; }
 
+.mobile-header.active {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1); }
+
 .header {
   background-color: #fff;
   position: relative;
   z-index: 9999; }
-  .header.active {
+  .header .header-top.active {
     width: 100%;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 9999;
-    background-color: #fff; }
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1); }
   .header .header-top .input-group {
     width: 70%; }
     .header .header-top .input-group .form-control {
@@ -78,6 +90,8 @@ body {
   .header .toggle-btn .bx {
     font-size: 40px;
     color: #2980b9; }
+  .header .shop-btn {
+    margin-left: -4rem; }
   .header .mobile-logo,
   .header .header-logo {
     position: relative;
@@ -87,6 +101,17 @@ body {
     font-size: 30px; }
   .header .offcanvas .accordion-item {
     border: 0 !important; }
+  .header .offcanvas .accordion-header .category {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 16px;
+    color: #333;
+    flex: 1; }
+    .header .offcanvas .accordion-header .category:hover {
+      color: #2980b9; }
+  .header .offcanvas .accordion-header .accordion-button {
+    width: 40px; }
   .header .offcanvas .accordion-button {
     font-size: 18px;
     background-color: #fff;
@@ -94,9 +119,6 @@ body {
     box-shadow: none !important; }
   .header .offcanvas .nav-link {
     color: #333; }
-    .header .offcanvas .nav-link.category {
-      color: orangered;
-      font-weight: bold; }
     .header .offcanvas .nav-link:hover {
       color: #2980b9; }
   .header .offcanvas .simple-link {
@@ -135,7 +157,7 @@ body {
     .header .tab-pane .nav .nav-item {
       position: static; }
       .header .tab-pane .nav .nav-item .nav-link {
-        padding-right: 50px;
+        padding-right: 5px;
         color: #333; }
         .header .tab-pane .nav .nav-item .nav-link:hover {
           color: #2980b9; }
@@ -181,4 +203,6 @@ body {
 
 @media (max-width: 480px) {
   .top-bar {
-    display: none; } }
+    display: none; }
+  .shop-btn {
+    margin-left: 0 !important; } }

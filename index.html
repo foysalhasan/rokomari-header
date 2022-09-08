@@ -612,15 +612,19 @@
       <!-- ===================== MAIN NAVIGATION END ========================= -->
 
       <!-- ===================== MOBILE MENU START ===========================  -->
-      <!-- MOBILE TOGGLE BUTTON -->
-      <div class="d-flex d-lg-none align-items-center">
-        <div class="d-inline-block toggle-btn ms-3 me-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
-          <i class="bx bx-menu"></i>
+      <div class="d-flex d-lg-none align-items-center justify-content-between mobile-header">
+        <div class="d-flex align-items-center">
+          <!-- MOBILE TOGGLE BUTTON -->
+          <div class="d-inline-block toggle-btn ms-3 me-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+            <i class="bx bx-menu"></i>
+          </div>
+          <!-- MOBILE LOGO -->
+          <a href="#" class="mobile-logo d-inline-block"><img src="img/rokomari_logo.png" class="w-100 d-inline-block" alt="logo" /></a>
         </div>
-        <!-- MOBILE LOGO -->
-        <a href="#" class="mobile-logo d-inline-block"><img src="img/rokomari_logo.png" class="w-100 d-inline-block" alt="logo" /></a>
+        <!-- SHOPPING BUTTON -->
+        <a href="" class="btn btn-outline-primary shop-btn">SHOPPING</a>
         <!-- SEARCH FOR MOBILE -->
-        <div class="d-flex align-items-center ms-auto pe-3 position-relative">
+        <div class="d-flex align-items-center pe-3 position-relative">
           <div class="dropdown">
             <button class="btn search-btn-wrapper" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
               <span class="btn search-btn px-0"><i class="bx bx-search"></i></span>
@@ -645,13 +649,13 @@
         <div class="offcanvas-body">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">বই</button>
+              <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingOne">
+                <a href="#" class="category">বই</a>
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"></button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <nav class="nav flex-column">
-                    <a class="nav-link category" href="#">সব বই</a>
                     <a class="nav-link" href="#">বাংলাদেশ</a>
                     <a class="nav-link" href="#">প্রকাশনী</a>
                     <a class="nav-link" href="#">শেখ মুজিবুর রহমান</a>
@@ -662,13 +666,13 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">ইলেক্ট্রনিক্স</button>
+              <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingTwo">
+                <a href="#" class="category">ইলেক্ট্রনিক্স</a>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"></button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <nav class="nav flex-column">
-                    <a class="nav-link category" href="#">সব ইলেক্ট্রনিক্স</a>
                     <a class="nav-link" href="#">প্রকাশনী</a>
                     <a class="nav-link" href="#">বাংলাদেশ</a>
                     <a class="nav-link" href="#">বিষয় </a>
@@ -679,13 +683,13 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">স্টেশনারী ও অন্যান্য</button>
+              <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingThree">
+                <a href="#" class="category">স্টেশনারী ও অন্যান্য</a>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"></button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <nav class="nav flex-column">
-                    <a class="nav-link category" href="#">সব স্টেশনারী</a>
                     <a class="nav-link" href="#">লেখক </a>
                     <a class="nav-link" href="#">বিষয় </a>
                     <a class="nav-link" href="#">প্রকাশনী</a>
