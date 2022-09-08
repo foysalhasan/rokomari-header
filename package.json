@@ -1,0 +1,11 @@
+{
+  "name": "md",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ws": "node-sass sass/main.scss css/main.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
