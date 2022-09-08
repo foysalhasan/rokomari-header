@@ -128,7 +128,7 @@ body {
   .header .mobile-logo,
   .header .header-logo {
     position: relative;
-    width: 100px;
+    width: 100%;
     margin-bottom: 10px; }
   .header .offcanvas .nav-close-btn {
     font-size: 30px; }
@@ -158,10 +158,14 @@ body {
     font-size: 18px; }
   .header .nav-tabs {
     --bs-nav-link-padding-x: 15px;
-    padding-left: 200px;
     border-color: #2980b9; }
     .header .nav-tabs .nav-link {
       color: #333; }
+      .header .nav-tabs .nav-link a {
+        text-decoration: none;
+        color: #333; }
+      .header .nav-tabs .nav-link.active a {
+        color: #2980b9; }
       .header .nav-tabs .nav-link:hover {
         color: #2980b9;
         border-top-color: transparent;
@@ -234,8 +238,27 @@ body {
   .demo-section:nth-child(odd) {
     background-color: #ddd; }
 
+@media (max-width: 1199px) {
+  .nav-tabs .nav-link {
+    padding: 0.5rem 0.7rem; }
+  .header .nav-tabs .nav-link,
+  .header .tab-pane .nav .nav-item .nav-link,
+  .header .tab-pane .nav .nav-item .megamenu .megamenu-wrapper ul a {
+    font-size: 14px; }
+  .rv-btn {
+    font-size: 14px !important; } }
+
+@media (max-width: 767px) {
+  .header .mobile-logo,
+  .header .header-logo {
+    width: 160px; } }
+
+@media (max-width: 575px) {
+  .offcanvas-start {
+    width: 300px; } }
+
 @media (max-width: 480px) {
-  .top-bar {
-    display: none; }
   .shop-btn {
-    margin-left: 0 !important; } }
+    margin-left: 0 !important;
+    padding: 4px 6px;
+    font-size: 11px; } }

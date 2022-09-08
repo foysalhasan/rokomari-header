@@ -20,20 +20,24 @@
   </head>
   <body>
     <!-- TOP BAR -->
-    <div class="top-bar py-1 mb-4">
-      <div class="container">
-        <div class="row justify-content-center justify-content-xl-between align-items-center">
-          <div class="col-xl-4 text-center text-xl-start">
-            <span><i class="bx bx-phone me-1"></i>+1 (786)-123-45678 |</span>
-            <span>9:00 am - 11:00 pm</span>
-          </div>
-          <div class="col-xl-8">
-            <nav class="nav justify-content-center justify-content-xl-end align-items-center">
-              <a class="nav-link" href="#">Happy Return</a>
-              <a class="nav-link" href="#">Book Sample</a>
+    <div class="top-bar py-1 mb-4 d-none d-md-block">
+      <div class="container-fluid">
+        <div class="row justify-content-center justify-content-md-between align-items-center">
+          <div class="col-xl-4 col-md-6 order-0 order-xl-0">
+            <nav class="nav align-items-center justify-content-center justify-content-md-start">
               <a class="nav-link" href="#">Contact us</a>
               <a class="nav-link" href="#">Support</a>
-              <a class="nav-link" href="#">Order Track</a>
+              <a class="nav-link" href="#">About us</a>
+            </nav>
+          </div>
+          <div class="col-xl-4 col-md-6 order-2 order-xl-1">
+            <marquee class="text-capitalize" behavior="" direction=""
+              >BDLIBRARY.org is the biggest online bookshop and marketplace of Bangladesh. You can buy and sell your desire books online !!!</marquee
+            >
+          </div>
+          <div class="col-xl-4 col-md-6 order-1 order-xl-2">
+            <nav class="nav justify-content-center justify-content-xl-end align-items-center">
+              <a class="nav-link" href="#">Contact us</a>
               <a class="nav-link" href="#">About us</a>
               <div class="lang-switcher">
                 <select class="form-select">
@@ -53,12 +57,12 @@
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-lg-2">
-              <a href="#" class="header-logo d-inline-block"><img src="img/rokomari_logo.png" class="w-100 d-inline-block" alt="logo" /></a>
+              <a href="#" class="header-logo d-inline-block"><img src="img/bdlibrary-logo-4.png" class="w-100 d-inline-block" alt="logo" /></a>
             </div>
             <div class="col-lg-7">
               <div class="d-flex align-items-center">
                 <div class="input-group me-3">
-                  <input type="text" class="form-control" placeholder="Search by Author, Books etc..." />
+                  <input type="text" class="form-control" placeholder="Search by Author, Books, Category, Brand etc..." />
                   <span class="input-group-text" id="basic-addon2"><i class="bx bx-search-alt-2"></i></span>
                 </div>
                 <a href="#" class="btn btn-outline-primary px-4 py-2 signin-btn">SHOPPING</a>
@@ -76,7 +80,7 @@
       </div>
       <!-- ===================== MAIN NAVIGATION START ========================= -->
       <div class="main-nav d-none d-lg-block">
-        <div class="container position-relative">
+        <div class="container-fluid position-relative">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button
@@ -89,41 +93,149 @@
                 aria-controls="book-tab-pane"
                 aria-selected="true"
               >
-                বই
+                <a href="#">বই</a>
               </button>
             </li>
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="electronics-tab"
+                id="seller-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#electronics-tab-pane"
+                data-bs-target="#seller-tab-pane"
                 type="button"
                 role="tab"
-                aria-controls="electronics-tab-pane"
+                aria-controls="seller-tab-pane"
                 aria-selected="false"
               >
-                ইলেক্ট্রনিক্স
+                <a href="#">বিক্রতা কর্নার</a>
               </button>
             </li>
-            <li class="nav-item basic-item" role="presentation">
-              <a href="#" class="basic-link">গিফট ফাইন্ডার</a>
-            </li>
-            <li class="nav-item basic-item" role="presentation">
-              <a href="#" class="basic-link">প্রাতিষ্ঠানিক অর্ডার</a>
-            </li>
-            <li class="nav-item basic-item" role="presentation">
-              <a href="#" class="basic-link">অফার সমূহ</a>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="publisher-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#publisher-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="publisher-tab-pane"
+                aria-selected="false"
+              >
+                <a href="#">প্রকাশনী কর্নার</a>
+              </button>
             </li>
 
-            <li class="nav-item basic-item flex-grow-1 d-flex align-items-center justify-content-end position-static rv-item">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="writter-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#writter-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="writter-tab-pane"
+                aria-selected="false"
+              >
+                <a href="#">লেখক কর্নার</a>
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="student-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#student-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="student-tab-pane"
+                aria-selected="false"
+              >
+                <a href="#">স্টুডেন্ট কর্নার</a>
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="ebook-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ebook-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="ebook-tab-pane"
+                aria-selected="false"
+              >
+                <a href="#">ইবুক</a>
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="job-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#job-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="job-tab-pane"
+                aria-selected="false"
+              >
+                <a href="#">চাকরি প্রস্তুতি</a>
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="accesorries-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#accesorries-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="accesorries-tab-pane"
+                aria-selected="false"
+              >
+                <a href="#">এক্সেসরিস</a>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="store-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#store-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="store-tab-pane"
+                aria-selected="false"
+              >
+                <a href="#">স্টোর</a>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="blog-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#blog-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="blog-tab-pane"
+                aria-selected="false"
+              >
+                <a href="#">ব্লগ</a>
+              </button>
+            </li>
+
+            <li class="nav-item basic-item ms-auto d-flex align-items-center justify-content-end position-static rv-item">
               <!-- RECENTLY VIEW BUTTON -->
               <div class="d-flex align-items-center rv-btn">
-                <i class="bx bx-bolt-circle" style="font-size: 20px"></i> <span class="ms-1 text-uppercase">Recently Viewed</span>
+                <i class="bx bx-bolt-circle" style="font-size: 20px"></i> <span class="ms-1 text-uppercase">মাত্র দেখলেন</span>
               </div>
               <!-- RECENTLY VIEW CONTENT -->
               <div class="rv-wrapper position-absolute px-3 py-2 bg-white shadow-sm border border-light">
-                <div class="container">
+                <div class="container-fluid">
                   <div class="row flex-wrap">
                     <!-- SINGLE PRODUCT -->
                     <div class="product-box">
@@ -215,12 +327,12 @@
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="book-tab-pane" role="tabpanel" aria-labelledby="book-tab" tabindex="0">
+            <div class="tab-pane fade show active" id="book-tab-pane">
               <ul class="nav">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">লেখক <span class="arrow">&lt;</span> </a>
                   <div class="megamenu">
-                    <div class="container">
+                    <div class="container-fluid">
                       <div class="megamenu-wrapper">
                         <div class="row justify-content-between">
                           <div class="col-lg-3 col-sm-6">
@@ -295,7 +407,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">বিষয়<span class="arrow">&lt;</span></a>
                   <div class="megamenu">
-                    <div class="container">
+                    <div class="container-fluid">
                       <div class="megamenu-wrapper">
                         <div class="row justify-content-between">
                           <div class="col-lg-3 col-sm-6">
@@ -370,7 +482,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">প্রকাশনী<span class="arrow">&lt;</span></a>
                   <div class="megamenu">
-                    <div class="container">
+                    <div class="container-fluid">
                       <div class="megamenu-wrapper">
                         <div class="row justify-content-between">
                           <div class="col-lg-3 col-sm-6">
@@ -443,263 +555,163 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">শেখ মুজিবুর রহমান</a>
+                  <a class="nav-link" href="#">ইসলামী বই</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">মুক্তিযুদ্ধ</a>
+                  <a class="nav-link" href="#">স্কুল,কলেজ,মাদ্রাসা</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">বাংলাদেশ</a>
+                  <a class="nav-link" href="#">ইউনিভার্সিটি</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">বেস্টসেলার বই</a>
+                  <a class="nav-link" href="#">মেডিকেল</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">উপন্যাস</a>
+                  <a class="nav-link" href="#">ইঞ্জিনিয়ারিং</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">বেস্ট সেলার</a>
                 </li>
               </ul>
             </div>
-            <div class="tab-pane fade" id="electronics-tab-pane" role="tabpanel" aria-labelledby="electronics-tab" tabindex="0">
+            <div class="tab-pane fade" id="seller-tab-pane">
               <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">লেখক <span class="arrow">&lt;</span> </a>
-                  <div class="megamenu">
-                    <div class="container">
-                      <div class="megamenu-wrapper">
-                        <div class="row justify-content-between">
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#">হুমায়ূন আহমেদ</a>
-                              </li>
-                              <li>
-                                <a href="#">মুহম্মদ জাফর ইকবাল</a>
-                              </li>
-                              <li>
-                                <a href="#">সমরেশ মজুমদার</a>
-                              </li>
-                              <li>
-                                <a href="#">রবীন্দ্রনাথ ঠাকুর</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#">হুমায়ূন আহমেদ</a>
-                              </li>
-                              <li>
-                                <a href="#">মুহম্মদ জাফর ইকবাল</a>
-                              </li>
-                              <li>
-                                <a href="#">সমরেশ মজুমদার</a>
-                              </li>
-                              <li>
-                                <a href="#">রবীন্দ্রনাথ ঠাকুর</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#">হুমায়ূন আহমেদ</a>
-                              </li>
-                              <li>
-                                <a href="#">মুহম্মদ জাফর ইকবাল</a>
-                              </li>
-                              <li>
-                                <a href="#">সমরেশ মজুমদার</a>
-                              </li>
-                              <li>
-                                <a href="#">রবীন্দ্রনাথ ঠাকুর</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#">হুমায়ূন আহমেদ</a>
-                              </li>
-                              <li>
-                                <a href="#">মুহম্মদ জাফর ইকবাল</a>
-                              </li>
-                              <li>
-                                <a href="#">সমরেশ মজুমদার</a>
-                              </li>
-                              <li>
-                                <a href="#">রবীন্দ্রনাথ ঠাকুর</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <a href="#" class="nav-link">Login / Registraion </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">বিষয়<span class="arrow">&lt;</span></a>
-                  <div class="megamenu">
-                    <div class="container">
-                      <div class="megamenu-wrapper">
-                        <div class="row justify-content-between">
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#"> তামিম শাহরিয়ার সুবিন</a>
-                              </li>
-                              <li>
-                                <a href="#">কাজী নজরুল ইসলাম</a>
-                              </li>
-                              <li>
-                                <a href="#">হুমায়ুন আজাদ</a>
-                              </li>
-                              <li>
-                                <a href="#">জহির রায়হান</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#"> তামিম শাহরিয়ার সুবিন</a>
-                              </li>
-                              <li>
-                                <a href="#">কাজী নজরুল ইসলাম</a>
-                              </li>
-                              <li>
-                                <a href="#">হুমায়ুন আজাদ</a>
-                              </li>
-                              <li>
-                                <a href="#">জহির রায়হান</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#"> তামিম শাহরিয়ার সুবিন</a>
-                              </li>
-                              <li>
-                                <a href="#">কাজী নজরুল ইসলাম</a>
-                              </li>
-                              <li>
-                                <a href="#">হুমায়ুন আজাদ</a>
-                              </li>
-                              <li>
-                                <a href="#">জহির রায়হান</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#"> তামিম শাহরিয়ার সুবিন</a>
-                              </li>
-                              <li>
-                                <a href="#">কাজী নজরুল ইসলাম</a>
-                              </li>
-                              <li>
-                                <a href="#">হুমায়ুন আজাদ</a>
-                              </li>
-                              <li>
-                                <a href="#">জহির রায়হান</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <a href="#" class="nav-link">Sell Book</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">প্রকাশনী<span class="arrow">&lt;</span></a>
-                  <div class="megamenu">
-                    <div class="container">
-                      <div class="megamenu-wrapper">
-                        <div class="row justify-content-between">
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#"> আহমদ ছফা</a>
-                              </li>
-                              <li>
-                                <a href="#"> সৈয়দ শামসুল হক</a>
-                              </li>
-                              <li>
-                                <a href="#">সমরেশ মজুমদার</a>
-                              </li>
-                              <li>
-                                <a href="#">সাদাত হোসাইন</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#"> আহমদ ছফা</a>
-                              </li>
-                              <li>
-                                <a href="#"> সৈয়দ শামসুল হক</a>
-                              </li>
-                              <li>
-                                <a href="#">সমরেশ মজুমদার</a>
-                              </li>
-                              <li>
-                                <a href="#">সাদাত হোসাইন</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#"> আহমদ ছফা</a>
-                              </li>
-                              <li>
-                                <a href="#"> সৈয়দ শামসুল হক</a>
-                              </li>
-                              <li>
-                                <a href="#">সমরেশ মজুমদার</a>
-                              </li>
-                              <li>
-                                <a href="#">সাদাত হোসাইন</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="col-lg-3 col-sm-6">
-                            <ul>
-                              <li>
-                                <a href="#"> আহমদ ছফা</a>
-                              </li>
-                              <li>
-                                <a href="#"> সৈয়দ শামসুল হক</a>
-                              </li>
-                              <li>
-                                <a href="#">সমরেশ মজুমদার</a>
-                              </li>
-                              <li>
-                                <a href="#">সাদাত হোসাইন</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <a href="#" class="nav-link">Sell Accessories</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="publisher-tab-pane">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Login / Registraion </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">শেখ মুজিবুর রহমান</a>
+                  <a href="#" class="nav-link">Sell Book</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">মুক্তিযুদ্ধ</a>
+                  <a href="#" class="nav-link">About Publisher</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">বাংলাদেশ</a>
+                  <a href="#" class="nav-link">Sell Accessories</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="writter-tab-pane">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Login / Registraion </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">বেস্টসেলার বই</a>
+                  <a href="#" class="nav-link">About Author</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">উপন্যাস</a>
+                  <a href="#" class="nav-link">Sell Books</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Submit Ebook</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Submit Article</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="student-tab-pane">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Login / Registraion </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Read Ebooks</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Submit Ebook</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Submit Article</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="ebook-tab-pane">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Login / Registraion </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Submit Ebook</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="job-tab-pane">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">JOB LINK 1 </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">JOB LINK 2 </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">JOB LINK 3 </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">JOB LINK 4</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="accesorries-tab-pane">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">স্টেশনারী</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">ডায়েরি / নোটবুক</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">ক্যালকুলেটর </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">ব্যাগ</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">ইসলামী এক্সেসরিস</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="store-tab-pane">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">STORE LINK 1 </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">STORE LINK 2 </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">STORE LINK 3 </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">STORE LINK 4</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="blog-tab-pane">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">BLOG LINK 1 </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">BLOG LINK 2 </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">BLOG LINK 3 </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">BLOG LINK 4</a>
                 </li>
               </ul>
             </div>
@@ -709,6 +721,7 @@
       <!-- ===================== MAIN NAVIGATION END ========================= -->
 
       <!-- ===================== MOBILE MENU START ===========================  -->
+
       <div class="d-flex d-lg-none align-items-center justify-content-between mobile-header">
         <div class="d-flex align-items-center">
           <!-- MOBILE TOGGLE BUTTON -->
@@ -716,12 +729,12 @@
             <i class="bx bx-menu"></i>
           </div>
           <!-- MOBILE LOGO -->
-          <a href="#" class="mobile-logo d-inline-block"><img src="img/rokomari_logo.png" class="w-100 d-inline-block" alt="logo" /></a>
+          <a href="#" class="mobile-logo d-inline-block"><img src="img/bdlibrary-logo-4.png" class="w-100 d-inline-block" alt="logo" /></a>
         </div>
         <!-- SHOPPING BUTTON -->
-        <a href="" class="btn btn-outline-primary shop-btn">SHOPPING</a>
+        <a href="#" class="btn btn-outline-primary shop-btn">SHOPPING</a>
         <!-- SEARCH FOR MOBILE -->
-        <div class="d-flex align-items-center pe-3 position-relative">
+        <div class="d-flex align-items-center position-relative">
           <div class="dropdown">
             <button class="btn search-btn-wrapper" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
               <span class="btn search-btn px-0"><i class="bx bx-search"></i></span>
@@ -735,6 +748,7 @@
           </div>
         </div>
       </div>
+
       <!-- MOBILE NAVIGATION WITH OFF CANVAS  -->
       <div class="offcanvas offcanvas-start d-block d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="d-flex bg-primary justify-content-between align-items-center px-3 py-2">
@@ -743,7 +757,7 @@
             <span class="text-white nav-close-btn"><i class="bx bx-x"></i></span>
           </button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body overflow-scroll">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingOne">
@@ -798,12 +812,11 @@
             </div>
           </div>
           <!-- SIMPLE AND BASIC LINK -->
-          <nav class="nav flex-column ps-2 simple-link">
+          <nav class="nav flex-column ps-2 simple-link overflow-scroll">
             <a class="nav-link" href="#">বাংলাদেশ</a>
             <a class="nav-link" href="#">প্রকাশনী</a>
             <a class="nav-link" href="#">শেখ মুজিবুর রহমান</a>
             <a class="nav-link" href="#">লেখক </a>
-            <a class="nav-link" href="#">বিষয় </a>
           </nav>
         </div>
       </div>

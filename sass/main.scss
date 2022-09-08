@@ -123,8 +123,7 @@ body {
       }
     }
   }
-  .recently-view-wrapper {
-  }
+
   .wishlist-btn {
     font-size: 32px;
     cursor: pointer;
@@ -176,7 +175,7 @@ body {
   .mobile-logo,
   .header-logo {
     position: relative;
-    width: 100px;
+    width: 100%;
     margin-bottom: 10px;
   }
   .offcanvas {
@@ -221,10 +220,16 @@ body {
   }
   .nav-tabs {
     --bs-nav-link-padding-x: 15px;
-    padding-left: 200px;
     border-color: $color-light;
     .nav-link {
       color: #333;
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      &.active a {
+        color: $color-light;
+      }
       &:hover {
         color: $color-light;
         border-top-color: transparent;
@@ -325,11 +330,37 @@ body {
   padding: 20rem 0;
 }
 
-@media (max-width: 480px) {
-  .top-bar {
-    display: none;
+@media (max-width: 1199px) {
+  .nav-tabs .nav-link {
+    padding: 0.5rem 0.7rem;
   }
+  .header .nav-tabs .nav-link,
+  .header .tab-pane .nav .nav-item .nav-link,
+  .header .tab-pane .nav .nav-item .megamenu .megamenu-wrapper ul a {
+    font-size: 14px;
+  }
+  .rv-btn {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .mobile-logo,
+  .header .header-logo {
+    width: 160px;
+  }
+}
+
+@media (max-width: 575px) {
+  .offcanvas-start {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
   .shop-btn {
     margin-left: 0 !important;
+    padding: 4px 6px;
+    font-size: 11px;
   }
 }
