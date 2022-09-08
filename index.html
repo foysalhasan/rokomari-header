@@ -68,8 +68,24 @@
             </div>
             <div class="col-lg-3">
               <div class="d-flex align-items-center">
-                <span class="btn wishlist-btn px-0"><i class="bx bx-heart"></i></span>
-                <span class="cart-btn btn ps-1"><i class="bx bx-cart"></i></span>
+                <div class="position-relative">
+                  <span class="btn wishlist-btn px-0"><i class="bx bx-heart"></i></span>
+                  <div
+                    class="rounded-circle bg-primary text-white position-absolute d-flex justify-content-center align-items-center"
+                    style="width: 20px; height: 20px; font-size: 12px; top: 7px; left: -3px"
+                  >
+                    5
+                  </div>
+                </div>
+                <div class="position-relative">
+                  <span class="cart-btn btn ps-1"><i class="bx bx-cart"></i></span>
+                  <div
+                    class="rounded-circle bg-primary text-white position-absolute d-flex justify-content-center align-items-center"
+                    style="width: 20px; height: 20px; font-size: 12px; top: 12px; left: 5px"
+                  >
+                    5
+                  </div>
+                </div>
                 <a href="#" class="btn btn-outline-primary px-4 py-2 signin-btn">Sign in</a>
               </div>
             </div>
@@ -748,7 +764,7 @@
       </div>
 
       <!-- MOBILE NAVIGATION WITH OFF CANVAS  -->
-      <div class="offcanvas offcanvas-start d-block d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas offcanvas-start d-block d-lg-none overflow-scroll" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="d-flex bg-primary justify-content-between align-items-center px-3 py-2">
           <a href="#" class="text-white text-decoration-none">HOME</a>
           <button type="button" class="btn" data-bs-dismiss="offcanvas">
@@ -760,62 +776,184 @@
             <div class="accordion-item">
               <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingOne">
                 <a href="#" class="category">বই</a>
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"></button>
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#book"></button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="book" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <nav class="nav flex-column">
-                    <a class="nav-link" href="#">বাংলাদেশ</a>
-                    <a class="nav-link" href="#">প্রকাশনী</a>
-                    <a class="nav-link" href="#">শেখ মুজিবুর রহমান</a>
-                    <a class="nav-link" href="#">লেখক </a>
+                    <a class="nav-link" href="#">লেখক</a>
                     <a class="nav-link" href="#">বিষয়</a>
+                    <a class="nav-link" href="#">প্রকাশনী</a>
+                    <a class="nav-link" href="#">ইসলামী বই</a>
+                    <a class="nav-link" href="#">স্কুল,কলেজ,মাদ্রাসা</a>
+                    <a class="nav-link" href="#">ইউনিভার্সিটি</a>
+                    <a class="nav-link" href="#">মেডিকেল</a>
+                    <a class="nav-link" href="#">ইঞ্জিনিয়ারিং</a>
+                    <a class="nav-link" href="#">বেস্ট সেলার</a>
                   </nav>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingTwo">
-                <a href="#" class="category">ইলেক্ট্রনিক্স</a>
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"></button>
+                <a href="#" class="category">বিক্রতা কর্নার</a>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#seller-corner"></button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div id="seller-corner" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <nav class="nav flex-column">
-                    <a class="nav-link" href="#">প্রকাশনী</a>
-                    <a class="nav-link" href="#">বাংলাদেশ</a>
-                    <a class="nav-link" href="#">বিষয় </a>
-                    <a class="nav-link" href="#">শেখ মুজিবুর রহমান</a>
-                    <a class="nav-link" href="#">লেখক </a>
+                    <a class="nav-link" href="#">Login / Registraion</a>
+                    <a class="nav-link" href="#">Sell Book</a>
+                    <a class="nav-link" href="#">Sell Accessories </a>
                   </nav>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingThree">
-                <a href="#" class="category">স্টেশনারী ও অন্যান্য</a>
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"></button>
+                <a href="#" class="category">প্রকাশনী কর্নার</a>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#publisher-corner"></button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div id="publisher-corner" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <nav class="nav flex-column">
-                    <a class="nav-link" href="#">লেখক </a>
-                    <a class="nav-link" href="#">বিষয় </a>
-                    <a class="nav-link" href="#">প্রকাশনী</a>
-                    <a class="nav-link" href="#">শেখ মুজিবুর রহমান</a>
-                    <a class="nav-link" href="#">বাংলাদেশ</a>
+                    <a class="nav-link" href="#">Login / Registraion</a>
+                    <a class="nav-link" href="#">Sell Book</a>
+                    <a class="nav-link" href="#">About Publisher</a>
+                    <a class="nav-link" href="#">Sell Accessories </a>
                   </nav>
                 </div>
               </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingFour">
+                <a href="#" class="category">লেখক কর্নার</a>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#writter-corner"></button>
+              </h2>
+              <div id="writter-corner" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <nav class="nav flex-column">
+                    <a class="nav-link" href="#">Login / Registraion</a>
+                    <a class="nav-link" href="#">About Author</a>
+                    <a class="nav-link" href="#">Sell Book</a>
+                    <a class="nav-link" href="#">Submit Ebook</a>
+                    <a class="nav-link" href="#">Submit Article</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingFive">
+                <a href="#" class="category">স্টুডেন্ট কর্নার</a>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#student-corner"></button>
+              </h2>
+              <div id="student-corner" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <nav class="nav flex-column">
+                    <a class="nav-link" href="#">Login / Registraion</a>
+                    <a class="nav-link" href="#">Read Ebooks</a>
+                    <a class="nav-link" href="#">Submit Ebook</a>
+                    <a class="nav-link" href="#">Submit Article</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingSix">
+                <a href="#" class="category">ই-বুক</a>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ebook-corner"></button>
+              </h2>
+              <div id="ebook-corner" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <nav class="nav flex-column">
+                    <a class="nav-link" href="#">Login / Registraion</a>
+                    <a class="nav-link" href="#">Submit Ebook</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingSeven">
+                <a href="#" class="category">চাকরি প্রস্তুতি</a>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job-corner"></button>
+              </h2>
+              <div id="job-corner" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <nav class="nav flex-column">
+                    <a class="nav-link" href="#">JOB LINK 1</a>
+                    <a class="nav-link" href="#">JOB LINK 2</a>
+                    <a class="nav-link" href="#">JOB LINK 3</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingEight">
+                <a href="#" class="category">এক্সেসরিস</a>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accessories-corner"></button>
+              </h2>
+              <div id="accessories-corner" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <nav class="nav flex-column">
+                    <a class="nav-link" href="#">স্টেশনারী</a>
+                    <a class="nav-link" href="#">ডায়েরি / নোটবুক</a>
+                    <a class="nav-link" href="#">ক্যালকুলেটর</a>
+                    <a class="nav-link" href="#">ব্যাগ</a>
+                    <a class="nav-link" href="#">ইসলামী এক্সেসরিস</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingNine">
+                <a href="#" class="category">স্টোর</a>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#store-corner"></button>
+              </h2>
+              <div id="store-corner" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <nav class="nav flex-column">
+                    <a class="nav-link" href="#">STORE LINK 1</a>
+                    <a class="nav-link" href="#">STORE LINK 2</a>
+                    <a class="nav-link" href="#">STORE LINK 3</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header d-flex justify-content-between align-items-center" id="headingTen">
+                <a href="#" class="category">ব্লগ</a>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#blog-corner"></button>
+              </h2>
+              <div id="blog-corner" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <nav class="nav flex-column">
+                    <a class="nav-link" href="#">BLOG LINK 1</a>
+                    <a class="nav-link" href="#">BLOG LINK 2</a>
+                    <a class="nav-link" href="#">BLOG LINK 3</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <nav class="nav flex-column simple-link">
+              <a class="nav-link" href="#">অর্ডার ট্রাক</a>
+              <a class="nav-link" href="#">মাত্র দেখলেন</a>
+            </nav>
           </div>
-          <!-- SIMPLE AND BASIC LINK -->
-          <nav class="nav flex-column ps-2 simple-link overflow-scroll">
-            <a class="nav-link" href="#">বাংলাদেশ</a>
-            <a class="nav-link" href="#">প্রকাশনী</a>
-            <a class="nav-link" href="#">শেখ মুজিবুর রহমান</a>
-            <a class="nav-link" href="#">লেখক </a>
-          </nav>
+          <div class="mt-2">
+            <div class="lang-switcher">
+              <select class="form-select">
+                <option selected>বাংলা</option>
+                <option value="1">ENG</option>
+              </select>
+            </div>
+          </div>
+          <div class="social-link">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+          </div>
         </div>
       </div>
       <!-- ===================== MOBILE MENU END ===========================  -->
