@@ -19,6 +19,7 @@ body {
     .top-bar .nav-link:hover {
       color: #2980b9; }
   .top-bar .lang-switcher .form-select {
+    background-color: #f2f2f2;
     outline: none !important;
     box-shadow: none !important; }
 
