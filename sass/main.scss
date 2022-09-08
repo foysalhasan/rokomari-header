@@ -111,6 +111,10 @@ body {
         padding-bottom: 10px;
         outline: none !important;
         box-shadow: none !important;
+
+        &::placeholder {
+          font-size: 12px !important;
+        }
       }
       .input-group-text {
         font-size: 30px;
@@ -222,6 +226,7 @@ body {
   .nav-tabs {
     --bs-nav-link-padding-x: 15px;
     border-color: $color-light;
+    padding-left: 30px;
     .nav-link {
       color: #333;
       a {
@@ -332,6 +337,9 @@ body {
 }
 
 @media (max-width: 1199px) {
+  .nav-tabs {
+    padding-left: 0 !important;
+  }
   .nav-tabs .nav-link {
     padding: 0.5rem 0.7rem;
   }

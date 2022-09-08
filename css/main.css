@@ -86,6 +86,8 @@ body {
       padding-bottom: 10px;
       outline: none !important;
       box-shadow: none !important; }
+      .header .header-top .input-group .form-control::placeholder {
+        font-size: 12px !important; }
     .header .header-top .input-group .input-group-text {
       font-size: 30px;
       color: #f7b926;
@@ -159,7 +161,8 @@ body {
     font-size: 18px; }
   .header .nav-tabs {
     --bs-nav-link-padding-x: 15px;
-    border-color: #2980b9; }
+    border-color: #2980b9;
+    padding-left: 30px; }
     .header .nav-tabs .nav-link {
       color: #333; }
       .header .nav-tabs .nav-link a {
@@ -240,6 +243,8 @@ body {
     background-color: #ddd; }
 
 @media (max-width: 1199px) {
+  .nav-tabs {
+    padding-left: 0 !important; }
   .nav-tabs .nav-link {
     padding: 0.5rem 0.7rem; }
   .header .nav-tabs .nav-link,
