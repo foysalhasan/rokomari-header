@@ -29,6 +29,12 @@ body {
       background-color: #f2f2f2;
       outline: none !important;
       box-shadow: none !important;
+      padding: 0.1rem 1.8rem 0.1rem 1rem;
+      cursor: pointer;
+      &:hover {
+        background-color: $color-light;
+        color: #fff;
+      }
     }
   }
 }
@@ -133,11 +139,17 @@ body {
     font-size: 32px;
     cursor: pointer;
     color: $color-light;
+    &:hover {
+      color: orangered;
+    }
   }
   .cart-btn {
     font-size: 40px;
     color: $color-light;
     cursor: pointer;
+    &:hover {
+      color: orangered;
+    }
   }
   .signin-btn {
     font-family: inherit;
@@ -214,7 +226,6 @@ body {
     }
     .nav-link {
       color: #333;
-
       &:hover {
         color: $color-light;
       }
@@ -232,6 +243,9 @@ body {
       a {
         text-decoration: none;
         color: #333;
+        &:hover {
+          color: $color-light;
+        }
       }
       &.active a {
         color: $color-light;
